@@ -43,7 +43,7 @@ app.get('/', (req, res) => {
 
 // Display a form that asks for the user's name.
 app.get('/hello', (req, res) => {
-  res.render('hello.html');
+  res.render('hello.html.njk');
 });
 
 // Handle the form from /hello and greet the user.
