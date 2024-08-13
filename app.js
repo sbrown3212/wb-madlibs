@@ -56,8 +56,11 @@ app.get('/greet', (req, res) => {
 });
 
 app.get('/game', (req, res) => {
+  const { name, } = req.query;
   if (req.query.play === 'no') {
-    res.render('goodbye.html.njk');
+    res.render('goodbye.html.njk', {
+      name: name,
+    });
   }
   if (req.query.play === 'yes') {
     res.render('game.html.njk');
