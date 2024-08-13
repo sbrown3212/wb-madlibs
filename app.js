@@ -38,7 +38,7 @@ const COMPLIMENTS = [
 
 // Display the homepage
 app.get('/', (req, res) => {
-  res.render('index.html');
+  res.render('index.html.njk');
 });
 
 // Display a form that asks for the user's name.
